@@ -1,0 +1,305 @@
+/* HTML Elements */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/*background-color: lightgray;*/
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url(../images/circuit/circuit/circuit.png);
+	background-repeat: repeat;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	overflow: auto;
+	color: #777;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, 'Time New Roman', Times, serif;
+	color: teal;
+	font-weight: bold;
+}
+
+header {
+	background-color: #fff;
+	border-bottom: 3px solid #ccc;
+	margin-bottom: 30px;
+}
+
+header h1 {
+	background-color: teal;
+	color: white;
+	display: inline-block;
+	padding: 30px;
+	font-size: 30px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+ul li a:hover {
+	text-decoration: underline;
+}
+
+h4 a {
+	text-decoration: none;
+	color: white;
+}
+
+h4 a:hover {
+	text-decoration: underline;
+}
+
+nav {
+	width: 300px;
+	float: right;
+	margin-top: 35px;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+
+}
+
+nav ul li a {
+	color: #333;
+	font-size: 18px;
+	padding: 5px 15px;
+	border-right: 2px solid teal;
+	text-decoration: none;
+}
+
+/* psueudo class
+   find last li tag, grab the a tag, and do something with it
+ */
+nav ul li:last-child a {
+	border-right: none;
+	padding-right: none;
+}
+
+p {
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 20px;
+	text-align: justify;
+	color: #777;
+}
+
+form label {
+	font-size: 18px;
+	display: block;
+}
+
+form input, form textarea {
+	width: 100%;
+	display: block;
+	margin: 5px 0 20px 0;
+	border: 2px solid #ccc;
+	padding: 10px;
+	font-size: 16px;
+}
+
+textarea {
+	height: 250px;
+}
+
+form button {
+	background-color: teal;
+	color: white;
+	padding: 10px 20px;
+	margin: 10px 0;
+	font-size: 18px;
+	border: none;
+}
+
+form button:hover {
+	cursor: pointer;
+}
+
+footer {
+	background: #666;
+	border-top: 8px solid #4aaaa5;
+	color: white;
+	text-align: center;
+	padding: 40px;
+	margin-top: 30px;
+
+}
+
+/* HTML classes */
+
+/* be 960px wide */
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.inline-img {
+	float: left;
+	margin: 0 15px 15px 0;
+	border: 4px groove #777;
+}
+
+.portfolio-item {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 20px;
+	width: 45%;
+	float: left;
+	height: 250px;
+}
+
+.portfolio-item:nth-of-type(even) {
+	float: right;
+}
+
+.portfolio-item h4 {
+	background-color: teal;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	width: 100%;
+	position: absolute;
+	bottom: 15px;
+}
+
+.clearfix {
+	display: block;
+	clear: both;
+}
+
+/* HTML IDs */
+
+#left-column, #right-column {
+	background-color: #fff;
+	padding: 25px;
+	border: 2px solid #ddd;
+}
+
+#left-column {
+	width: 650px;
+	float: left;
+}
+
+#left-column h2 {
+	font-size: 24px;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #ccc;
+}
+
+#right-column {
+	width: 270px;
+	float: right;
+}
+
+#right-column h2 {
+	padding: 15px 0;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #ccc;
+}
+
+#right-column ul {
+	text-align: center;
+}
+
+#right-column ul li {
+	display: inline-block;
+
+}
+
+#port1 {
+	background-image: url('../images/Bulbasaur.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px outset silver;
+}
+
+#port2 {
+	background-image: url('../images/Charmander.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px outset silver;
+}
+
+#port3 {
+	background-image: url('../images/Squirtle.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px outset silver;
+}
+
+#port4 {
+	background-image: url('../images/Pikachu.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px outset silver;
+}
+
+#port5 {
+	background-image: url('../images/Eevee.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px outset silver;
+}
+
+#port6 {
+	background-image: url('../images/Psyduck.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px outset silver;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 640px) {
+    body {
+		background-image: url(../images/circuit/circuit/circuit.png);
+		height: 640px;
+    }
+
+    header h1 {
+    	width: 640px;
+    	text-align: center;
+    }
+
+    header {
+    	width: 100%;
+    	margin: 0 auto;
+    }
+
+    nav {
+    	background-color: white;
+    	/*padding: 10px;*/
+    	/*position: relative;*/
+    	margin-top: -20px;
+    	margin-left: -490px;
+    	text-align: center;
+    }
+
+    footer {
+    	width: 640px;
+    }
+
+    .wrapper {
+    	width: 640px;
+    	margin: 0 auto;
+    }
+
+    #left-column {
+		width: 640px;
+		float: left;
+		display: inline-block;
+
+	}
+
+	#right-column {
+		width: 640px;
+		float: left;
+		display: inline-block;
+}
+
+
+
+}
