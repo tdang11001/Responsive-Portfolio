@@ -262,60 +262,6 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* Max Width: 640px */
-/*@media only screen and (max-width: 640px) {
-    body {
-		background-image: url(../images/circuit/circuit/circuit.png);
-		height: 640px;
-		
-
-    }
-
-    header h1 {
-    	width: 640px;
-    	text-align: center;
-    }
-
-    header {
-    	width: 100%;
-    	margin: 0 auto;
-    }
-
-    nav {
-    	width: 100%;
-    	text-align: center;
-    	background-color: white;
-    	padding: 10px;
-    	margin-top: 0;
-    }
-
-    footer {
-    	width: 640px;
-    	margin-left: -15%;
-    }
-
-    .wrapper {
-    	width: 640px;
-    	margin: 0 auto;
-    }
-
-    #left-column {
-		width: 640px;
-		float: left;
-		display: inline-block;
-		/*margin-top: 30px;
-
-	}
-
-	#right-column {
-		width: 640px;
-		float: left;
-		display: inline-block;
-		margin-top: 30px;
-	}
-
-}*/
-
  /* Max Width: 980px */
  @media only screen and (max-width: 980px) {
     body {
