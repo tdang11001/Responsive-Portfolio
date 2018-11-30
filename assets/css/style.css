@@ -141,6 +141,9 @@ footer {
 	margin: 0 auto;
 }
 
+#content {
+	margin-top: 30px;
+}
 .inline-img {
 	float: left;
 	margin: 0 15px 15px 0;
