@@ -11,6 +11,10 @@ body {
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	overflow: auto;
 	color: #777;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,6 +129,7 @@ footer {
 	text-align: center;
 	padding: 40px;
 	margin-top: 30px;
+	width: 960px;
 
 }
 
@@ -259,6 +264,8 @@ footer {
     body {
 		background-image: url(../images/circuit/circuit/circuit.png);
 		height: 640px;
+		
+
     }
 
     header h1 {
@@ -281,6 +288,113 @@ footer {
 
     footer {
     	width: 640px;
+    	/*margin-left: -15%;*/
+    }
+
+    .wrapper {
+    	width: 640px;
+    	margin: 0 auto;
+    }
+
+    #left-column {
+		width: 640px;
+		float: left;
+		display: inline-block;
+		margin-top: 30px;
+
+	}
+
+	#right-column {
+		width: 640px;
+		float: left;
+		display: inline-block;
+		margin-top: 30px;
+	}
+
+}
+
+ /* Max Width: 980px */
+ @media only screen and (max-width: 980px) {
+    body {
+		background-image: url(../images/circuit/circuit/circuit.png);
+		height: 640px;
+    }
+
+    header h1 {
+    	width: 640px;
+    	text-align: center;
+    }
+
+    header {
+    	width: 65%;
+    	margin: 0px auto;
+    	background-color: red;
+    }
+
+    nav {
+    	width: 100%;
+    	text-align: center;
+    	background-color: white;
+    	padding: 10px;
+    	margin-top: 0;
+    }
+
+    footer {
+    	width: 640px;
+    	/*margin-left: 170px;*/
+    }
+
+    .wrapper {
+    	width: 640px;
+    	margin: 0 auto;
+    }
+
+    #left-column {
+		width: 640px;
+		float: left;
+		display: inline-block;
+		margin-top: 30px;
+
+	}
+
+	#right-column {
+		width: 640px;
+		float: left;
+		display: inline-block;
+		margin-top: 30px;
+	}
+
+}
+
+ /*Max Width: 768px */
+@media only screen and (max-width: 768px) {
+    body {
+		background-image: url(../images/circuit/circuit/circuit.png);
+		height: 640px;
+    }
+
+    header h1 {
+    	width: 640px;
+    	text-align: center;
+    }
+
+    header {
+    	width: 83%;
+    	margin: 0px auto;
+    	background-color: red;
+    }
+
+    nav {
+    	width: 100%;
+    	text-align: center;
+    	background-color: white;
+    	padding: 10px;
+    	margin-top: 0;
+    }
+
+    footer {
+    	width: 640px;
+    	/*margin-left: 65px;*/
     }
 
     .wrapper {
@@ -332,6 +446,7 @@ footer {
 
     footer {
     	width: 640px;
+    	margin: 0;
     }
 
     .wrapper {
@@ -357,108 +472,5 @@ footer {
 }
 
 
- /*Max Width: 768px */
-/*@media only screen and (max-width: 768px) {
-    body {
-		background-image: url(../images/circuit/circuit/circuit.png);
-		height: 640px;
-    }
 
-    header h1 {
-    	width: 640px;
-    	text-align: center;
-    }
 
-    header {
-    	width: 83%;
-    	margin: 0px auto;
-    	background-color: red;
-    }
-
-    nav {
-    	width: 100%;
-    	text-align: center;
-    	background-color: white;
-    	padding: 10px;
-    	margin-top: 0;
-    }
-
-    footer {
-    	width: 640px;
-    	margin-left: 65px;
-    }
-
-    .wrapper {
-    	width: 640px;
-    	margin: 0 auto;
-    }
-
-    #left-column {
-		width: 640px;
-		float: left;
-		display: inline-block;
-		margin-top: 30px;
-
-	}
-
-	#right-column {
-		width: 640px;
-		float: left;
-		display: inline-block;
-		margin-top: 30px;
-	}
-
-}*/
-
- /* Max Width: 980px */
-/* @media only screen and (max-width: 980px) {
-    body {
-		background-image: url(../images/circuit/circuit/circuit.png);
-		height: 640px;
-    }
-
-    header h1 {
-    	width: 640px;
-    	text-align: center;
-    }
-
-    header {
-    	width: 65%;
-    	margin: 0px auto;
-    	background-color: red;
-    }
-
-    nav {
-    	width: 100%;
-    	text-align: center;
-    	background-color: white;
-    	padding: 10px;
-    	margin-top: 0;
-    }
-
-    footer {
-    	width: 640px;
-    	margin-left: 170px;
-    }
-
-    .wrapper {
-    	width: 640px;
-    	margin: 0 auto;
-    }
-
-    #left-column {
-		width: 640px;
-		float: left;
-		display: inline-block;
-		margin-top: 30px;
-
-	}
-
-	#right-column {
-		width: 640px;
-		float: left;
-		display: inline-block;
-		margin-top: 30px;
-	}
-
-}*/
